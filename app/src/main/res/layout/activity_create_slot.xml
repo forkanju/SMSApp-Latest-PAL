@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewSlotsActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_slot_start_time"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        app:errorEnabled="true"
+        app:startIconDrawable="@drawable/clock"
+        app:startIconTint="#595858">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_slot_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefinsans_regular"
+            android:hint="Enter slot start time"
+            android:inputType="text"
+            android:text="13 Mar 10.30am" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_slot_end_time"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout_slot_start_time"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:errorEnabled="true"
+        app:startIconDrawable="@drawable/clock"
+        app:startIconTint="#595858">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_slot_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefinsans_regular"
+            android:hint="Enter slot end time"
+            android:inputType="text"
+            android:text="17 Mar 1.30pm" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/view_slot_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout_slot_end_time"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="45dp"
+        android:background="#2196F3"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

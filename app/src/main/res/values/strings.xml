@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">SMSApp</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+
+    <string-array name="planets_array">
+        <item>Login as an Admin</item>
+        <item>Login as a User</item>
+    </string-array>
+
+    <string-array name="field_type_array">
+        <item>Single</item>
+        <item>Multiple</item>
+    </string-array>
+
+    <string-array name="assigned_field_array">
+        <item>Single</item>
+        <item>Multiple</item>
+    </string-array>
+
+    <string-array name="include_array">
+        <item>Include</item>
+        <item>Exclude</item>
+    </string-array>
+
+    <string-array name="field_array">
+        <item>Field1</item>
+        <item>Field2</item>
+        <item>Field3</item>
+    </string-array>
+
+    <string-array name="table_array">
+        <item>Table1</item>
+        <item>Table2</item>
+        <item>Table3</item>
+    </string-array>
+
+    <string-array name="off_days_type_array">
+        <item>Specific</item>
+        <item>Continuous</item>
+    </string-array>
+
+
+</resources>
